@@ -13,7 +13,7 @@ contract AuthTest is Test {
 
     function testSetOwner() external {
         etherWallet.setOwner(address(1));
-        assertEq(etherWallet.owner(),address(1));
+        assertEq(etherWallet.owner(), address(1));
     }
 
     function test_ReverIf_NotOwner() external {
