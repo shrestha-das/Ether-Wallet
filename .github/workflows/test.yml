@@ -17,6 +17,9 @@ jobs:
         with:
           submodules: recursive
 
+      - name: Install Foundry dependencies
+        run: forge install
+
       - name: Install Foundry
         uses: foundry-rs/foundry-toolchain@v1
 
